@@ -1,0 +1,10 @@
+var app = angular.module('quoteBook')
+
+app.MainController('MainController', function($scope, dataService) {
+	$scope.test = 'This is a test';
+	$scope.getQuotes = function() {
+		$scope.list = dataService.getData();
+}
+	$scope.getData();
+
+});
